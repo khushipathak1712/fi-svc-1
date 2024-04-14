@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial Insights</title>
+</head>
+<body>
+<h1>Financial Insights</h1>
+<h2>Total Spending per Category</h2>
+<table border="1">
+    <tr>
+        <th>Category</th>
+        <th>Total Spending</th>
+    </tr>
+    <tr th:each="entry : ${spendingInsights}">
+        <td th:text="${entry.key}"></td>
+        <td th:text="${entry.value}"></td>
+    </tr>
+</table>
+</body>
+</html>

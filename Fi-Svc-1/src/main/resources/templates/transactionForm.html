@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction Input</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1>Enter Transaction Details</h1>
+<form action="/api/transactions" method="post" th:object="${transaction}">
+    <label>Date:</label>
+    <input type="date" th:field="*{date}"/><br>
+    <label>Amount:</label>
+    <input type="number" th:field="*{amount}"/><br>
+    <label>Category:</label>
+    <input type="text" th:field="*{category}"/><br>
+    <label>Description:</label>
+    <input type="text" th:field="*{description}"/><br>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
