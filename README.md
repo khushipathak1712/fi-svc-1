@@ -27,7 +27,7 @@ The Financial Insights Service (Fi-Svc-1) is a web application that allows users
 ### Installation
 
 1. Clone the repository:
-   git clone https:
+   git clone https:https://github.com/khushipathak1712/fi-svc-1.git
 
    
 2. Navigate to the project directory:
